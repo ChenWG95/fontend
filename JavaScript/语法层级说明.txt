@@ -1,0 +1,6 @@
+1. Realm：JS环境，顶层模块
+2. 宏任务 + 微任务
+3. Execution Context：函数调用
+4. Statement：语句 + Declaration：声明
+5. Expression：表达式
+6. Primary Expression：最小单位表达式

@@ -1,0 +1,5 @@
+ecma官方文档: 
+http://ecma-international.org/publications/standards/Standard.htm
+
+mdn:
+https://developer.mozilla.org/zh-CN/
