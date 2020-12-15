@@ -132,11 +132,20 @@ space-evenly的排列方式是首位各留1间距，它的行计算方式是：
 
 **所以按照这个理解，当出现多行场景时`flex-wrap: wrap`，我们想对于交叉轴做一些类似于`justify-content`对主轴做的一些操作时，就可以通过设置`align-content`来进行布局了**，其值可以参考`justify-content`
 
+**然而在flex布局中并没有`justify-items`和`justify-self`** ，其原因是在flex布局中的主轴上，flex将我们的内容作为一个组进行处理。justify-content用于将剩余空间对于组中每一个元素进行分配。
 
+举个例子：justify-content: flex-end将剩余空间放在子元素前，justify-content: space-around将剩余空间放在子元素两边
 
-按照同样的理解，除了以上说的，我们应该还会有`justify-items`、`justify-self`。大家感兴趣的话可以自己去试试看，类比`align-items`和`align-self`
+但是由于是以整个组来进行分配，所以无法进行单独指定。而align-items可能有额外空间供元素单独移动。
 
+所以总结下来：flex布局的主副轴有
 
+主轴：
+- justify-content
+副轴：
+- align-items
+- align-self
+- align-content
 
 ## place
 
